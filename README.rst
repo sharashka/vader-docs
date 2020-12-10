@@ -16,12 +16,13 @@ Install and run
 
 ::
 
-	$ poetry install
-	$ poetry shell
-	...
-	$ poetry exit
+    $ python -m venv .venv
+    $ source .venv/bin/activate
+    $ pip install -r requirements.txt
 
-Run commands inside the poetry shell (virtual environment):
+Then you can use `pipm
+<https://github.com/jnoortheen/pipm>`__ instead of pip,
+to manage your `requirements` files easier.
 
 Build the Guide::
 
@@ -31,12 +32,6 @@ Open the Guide::
 
     $ google-chrome-stable build/html/index.html
 
-Start Live Preview::
+Start Live Preview (with `dev-requirements.txt` installed)::
 
     $ sphinx-reload .
-
-Alternatively, without entering the poetry shell::
-
-    $ poetry run make html
-
-etc.
