@@ -4,6 +4,13 @@ Notes on tools
 Black
 =====
 
+An opinionated Python source code formatter.
+
+Reference
+---------
+
+`Index <https://black.readthedocs.io/en/stable/>`__
+
 Basic Usage
 -----------
 
@@ -33,7 +40,7 @@ Add to `pyproject.toml` an entry like this,
     )
     '''
 
-so you can run just
+so you can run
 
 ::
 
@@ -42,11 +49,41 @@ so you can run just
 Git Hooks
 =========
 
+Handling Git events (on the client side).
+
+Reference
+---------
+
+`Index <https://git-scm.com/docs/githooks>`__
+`Introduction <https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks>`__
+
+Basic Usage
+-----------
+
+Pre-commit hook, Black for Python example
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Create `.pre-commit-config.yaml`::
+
+    repos:
+      - repo: https://github.com/ambv/black
+        rev: stable
+        hooks:
+        - id: black
+
+Install and run::
+
+    $ pip install pre-commit
+    $ pre-commit install
+    $ pre-commit run --all-files
+
 GitHub Webhooks
 ===============
 
 Mypy
 ====
+
+Optional static typing for Python.
 
 Reference
 ---------
@@ -90,8 +127,63 @@ Discussion
 `#156 <https://github.com/samuelcolvin/pydantic/issues/156>`__
 `#239 <https://github.com/samuelcolvin/pydantic/issues/239>`__
 
+Pipm
+====
+
+`pipm` is a lightweight wrapper for `pip`.
+It extends `pip` functionality by keeping top-level dependencies in
+`setup.cfg` and managing `requirements` files.
+
+Reference
+---------
+
+`Project repository
+<https://github.com/jnoortheen/pipm>`__
+
+Basic Usage
+-----------
+
+::
+
+    $ source .venv/bin/activate
+    $ pip install pipm
+
+Update `setup.cfg`::
+
+    $ pipm install pipm
+
+Install a dependency::
+
+    $ pipm install sphinx
+
+Install a development dependency::
+
+    $ pipm install sphinx-reload --dev
+
+Install development dependencies from `dev-requirements.txt`::
+
+    $ pipm install --dev
+
+Install all dependencies from `*requirements*.txt`::
+
+    $ pipm install --all
+
+In a project maintained with `pipm` the relevant part of
+`setup.cfg` is going to look like this::
+
+    [options]
+    install_requires = 
+        pipm~=20.2.4
+        sphinx~=3.3.1
+
+    [options.extras_require]
+    dev = 
+        sphinx-reload~=0.2.0
+
 Poetry
 ======
+
+A heavyweight package manager for Python.
 
 Reference
 ---------

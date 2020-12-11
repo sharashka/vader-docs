@@ -20,10 +20,6 @@ Install and run
     $ source .venv/bin/activate
     $ pip install -r requirements.txt
 
-Then you can use `pipm
-<https://github.com/jnoortheen/pipm>`__ instead of pip,
-to manage your `requirements` files easier.
-
 Build the Guide::
 
     $ make html
@@ -32,6 +28,11 @@ Open the Guide::
 
     $ google-chrome-stable build/html/index.html
 
-Start Live Preview (with `dev-requirements.txt` installed)::
+Install `dev-requirements.txt` using `pipm
+<https://github.com/jnoortheen/pipm>`__ ::
+
+    $ pipm install --dev
+
+and start Live Preview::
 
     $ sphinx-reload .
