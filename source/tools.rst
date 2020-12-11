@@ -9,7 +9,7 @@ An opinionated Python source code formatter.
 Reference
 ---------
 
-`Index <https://black.readthedocs.io/en/stable/>`__
+- `Index <https://black.readthedocs.io/en/stable/>`__
 
 Basic Usage
 -----------
@@ -54,8 +54,8 @@ Handling Git events (on the client side).
 Reference
 ---------
 
-`Index <https://git-scm.com/docs/githooks>`__
-`Introduction <https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks>`__
+- `Index <https://git-scm.com/docs/githooks>`__
+- `Introduction <https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks>`__
 
 Basic Usage
 -----------
@@ -73,12 +73,31 @@ Create `.pre-commit-config.yaml`::
 
 Install and run::
 
-    $ pip install pre-commit
+    $ pipm install pre-commit --dev
     $ pre-commit install
     $ pre-commit run --all-files
 
 GitHub Webhooks
 ===============
+
+Handling Git events on the server side (`GitHub`).
+
+Reference
+---------
+
+- `Index
+  <https://docs.github.com/en/free-pro-team@latest/developers/webhooks-and-events/webhooks>`__
+- `Add webhook example
+  <https://spinnaker.io/setup/triggers/github/>`__
+
+Setup
+-----
+
+- Secure the necessary permissions.
+- Go to `Settings > Webhooks > Add Webhook` on the repository
+  Web interface.
+- Fill in `Payload URL`.
+- Choose `Content type` (application/json).
 
 Mypy
 ====
@@ -88,13 +107,13 @@ Optional static typing for Python.
 Reference
 ---------
 
-`Index <https://mypy.readthedocs.io/en/latest/index.html>`__
-`Configuration <https://mypy.readthedocs.io/en/latest/config_file.html#config-file>`__
+- `Index <https://mypy.readthedocs.io/en/latest/index.html>`__
+- `Configuration <https://mypy.readthedocs.io/en/latest/config_file.html#config-file>`__
 
 Addons
 ------
 
-`Pydantic plugin <https://pydantic-docs.helpmanual.io/mypy_plugin/>`__
+- `Pydantic plugin <https://pydantic-docs.helpmanual.io/mypy_plugin/>`__
 
 Basic Usage
 -----------
@@ -137,8 +156,8 @@ It extends `pip` functionality by keeping top-level dependencies in
 Reference
 ---------
 
-`Project repository
-<https://github.com/jnoortheen/pipm>`__
+- `Project repository
+  <https://github.com/jnoortheen/pipm>`__
 
 Basic Usage
 -----------
@@ -188,11 +207,11 @@ A heavyweight package manager for Python.
 Reference
 ---------
 
-`Index <https://python-poetry.org/docs/>`__
-`CLI <https://python-poetry.org/docs/cli/>`__
-`Configuration <https://python-poetry.org/docs/configuration/>`__
-`Project structure <https://python-poetry.org/docs/pyproject/>`__
-`Packaging/Publishing <https://python-poetry.org/docs/libraries/>`__
+- `Index <https://python-poetry.org/docs/>`__
+- `CLI <https://python-poetry.org/docs/cli/>`__
+- `Configuration <https://python-poetry.org/docs/configuration/>`__
+- `Project structure <https://python-poetry.org/docs/pyproject/>`__
+- `Packaging/Publishing <https://python-poetry.org/docs/libraries/>`__
 
 Discussion
 ----------
@@ -202,8 +221,8 @@ Discussion
 Addons
 ------
 
-`Poetry - plugin for IntelliJ IDEs
-<https://plugins.jetbrains.com/plugin/14307-poetry>`__
+- `Poetry - plugin for IntelliJ IDEs
+  <https://plugins.jetbrains.com/plugin/14307-poetry>`__
 
 Basic Usage
 -----------
@@ -254,3 +273,21 @@ Run `pytest` (or anything) without explicitly entering the virtual
 environment::
 
     $ poetry run pytest
+
+Sphinx
+======
+
+A Python documentation framework based on `reStructuredText`
+or `reST`
+(`*.rst`, a markup language).
+
+Reference
+---------
+
+- `Index <https://www.sphinx-doc.org/en/master/>`__
+- `RTD & reST intro
+  <https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html>`__
+- `reST cheatsheet
+  <https://github.com/ralsina/rst-cheatsheet/blob/master/rst-cheatsheet.rst>`__
+- `Custom CSS
+  <https://stackoverflow.com/questions/23462494/how-to-add-custom-css-file-to-sphinx>`__
