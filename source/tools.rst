@@ -46,6 +46,22 @@ so you can run
 
     $ black .
 
+Docker
+======
+
+OS-level virtualization platform.
+
+Reference
+---------
+
+- `Index <https://docs.docker.com/reference/>`__
+- `Cheatsheet (printable) <https://dmitryfrank.com/projects/docker-quick-ref>`__
+- `Another cheatsheet <https://medium.com/statuscode/dockercheatsheet-9730ce03630d>`__
+- `Docker and Kubernetes book collection
+  <https://github.com/anzhihe/Free-Docker-Books>`__
+- `Python image <https://hub.docker.com/_/python>`__
+- `Alpine lightweight image <https://hub.docker.com/_/alpine>`__
+
 Git Hooks
 =========
 
