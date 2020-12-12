@@ -24,6 +24,10 @@ Build the Guide::
 
     $ make html
 
+or ::
+
+    $ sphinx-build source build -b html 
+
 Open the Guide::
 
     $ google-chrome-stable build/html/index.html
