@@ -62,6 +62,9 @@ Reference
 - `Python image <https://hub.docker.com/_/python>`__
 - `Alpine lightweight image <https://hub.docker.com/_/alpine>`__
 
+Tips and Tricks
+---------------
+
 Glossary
 --------
 
