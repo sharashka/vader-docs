@@ -11,12 +11,11 @@ Welcome to Vader Developers' Guide!
    :caption: Contents:
    :glob:
 
-   tools/*
+   tools/_tools
    docs
    frontend
    backend
    tmp/*
-
 
 Indices and tables
 ******************

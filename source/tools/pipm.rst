@@ -50,4 +50,3 @@ In a project maintained with `pipm` the relevant part of
     [options.extras_require]
     dev = 
         sphinx-reload~=0.2.0
-

@@ -28,4 +28,3 @@ Install and run::
     $ pipm install pre-commit --dev
     $ pre-commit install
     $ pre-commit run --all-files
-

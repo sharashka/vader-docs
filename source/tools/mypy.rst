@@ -44,4 +44,3 @@ Discussion
 
 `#156 <https://github.com/samuelcolvin/pydantic/issues/156>`__
 `#239 <https://github.com/samuelcolvin/pydantic/issues/239>`__
-

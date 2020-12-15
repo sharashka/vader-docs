@@ -44,4 +44,3 @@ Layer
 A layer is a modification applied to a Docker image as represented by an
 instruction in a Dockerfile. Typically, a layer is created when a base image
 is changed.
-

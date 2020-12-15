@@ -19,4 +19,3 @@ Setup
   Web interface.
 - Fill in `Payload URL`.
 - Choose `Content type` (application/json).
-

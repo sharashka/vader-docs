@@ -1,6 +1,3 @@
-Notes on tools
-**************
-
 Black
 =====
 
@@ -45,4 +42,3 @@ so you can run
 ::
 
     $ black .
-

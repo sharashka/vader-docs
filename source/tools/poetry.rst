@@ -72,4 +72,3 @@ Run `pytest` (or anything) without explicitly entering the virtual
 environment::
 
     $ poetry run pytest
-
