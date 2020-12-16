@@ -13,3 +13,5 @@ workdir /src/
 run python -m venv .venv
 
 run /src/.venv/bin/pip install -r requirements.txt
+
+cmd /src/.venv/bin/sphinx-build source build -b html
