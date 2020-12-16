@@ -1,5 +1,5 @@
-Notes on tools
-**************
+Docs
+****
 
 .. toctree::
    :maxdepth: 2

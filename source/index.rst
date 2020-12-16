@@ -12,9 +12,9 @@ Welcome to Vader Developers' Guide!
    :glob:
 
    tools/_tools
-   docs
-   frontend
-   backend
+   docs/_docs
+   frontend/_frontend
+   backend/_backend
    tmp/*
 
 Indices and tables
