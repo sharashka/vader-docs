@@ -2,10 +2,6 @@ from python:3.8
 
 run mkdir /src/
 
-run pwd
-
-run ls
-
 copy requirements.txt /src/requirements.txt
 
 workdir /src/
