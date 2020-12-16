@@ -1,5 +1,5 @@
 Frontend
-********
+*********
 
 .. toctree::
    :maxdepth: 2
