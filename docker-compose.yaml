@@ -4,4 +4,5 @@ services:
   builder:
     build: . 
     volumes:
-      - ./build:/src/build
+      - ./build:/build
+      - ./source:/source 
