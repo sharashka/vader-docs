@@ -15,6 +15,7 @@ Welcome to Vader Developers' Guide!
    docs/_docs
    frontend/_frontend
    backend/_backend
+   dance/_dance
    tmp/*
 
 Indices and tables
